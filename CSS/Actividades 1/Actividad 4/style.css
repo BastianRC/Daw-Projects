@@ -1,0 +1,33 @@
+.one{
+    background-color: #FFA8C0;
+    border: 15px solid #104010;
+    width: 150px;
+    padding: 45px;
+    font-size: 15px;
+    margin: 85px;
+}
+
+.circle{
+    padding: 15px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0px 2px 15px 20px;
+}
+
+.g_circles{
+    position: absolute;
+    top: 590px;
+}
+
+.bg{
+    margin-top: 100px;
+    background-color: #ADD9E6;
+    display: inline-block;
+    width: 155px;
+    text-align: center;
+}
+
+.par{
+    margin-top: 10px;
+}

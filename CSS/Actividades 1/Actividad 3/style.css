@@ -1,0 +1,25 @@
+body{
+    background-image: url("https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg");
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: rgba(233, 100, 98, .5);
+}
+
+.one{
+    border: 3px solid rgba(203, 150, 98, 1);
+}
+
+.two{
+    border: 3px dotted rgba(100, 150, 98, 1);
+}
+
+.three{
+    border: 3px dashed rgba(50, 0, 98, 1);
+}
+
+.four{
+    border: 3px solid rgba(80, 35, 20, 1);
+    border-radius: 15px;
+}

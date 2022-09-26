@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web.</title>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="#" method="POST">
+        <p>
+            <label>Nombre:</label>
+            <input type="text" name="name" maxlength="50">
+        </p>
+
+        <p>
+            <label>Apellidos:</label>
+            <input type="text" name="surname" maxlength="50">
+        </p>
+
+        <p>
+            <label>Sexo:</label>
+              <label><input type="radio" name="sex" value="Hombre">Hombre</label>
+              <label><input type="radio" name="sex" value="Mujer">Mujer</label>
+        </p>
+
+        <p>
+            <label>Correo:</label>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+            <label>Poblacion:</label>
+            <select name="place" id="place">
+                <option value="alicante">Alicante</option>
+                <option value="madrid">Madrid</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia">Valencia</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Descripción:</label>
+            <textarea name="desc" rows="5" cols="40"></textarea>
+        </p>
+
+        <p>
+            <label><input type="checkbox" name="info" checked>Deseo recibir información sobre
+                novedades y ofertas</label><br/><br/>
+
+            <label><input type="checkbox" name="read">Declaro haber leido y aceptar las condiciones
+                generales del programa y la normativa sobre protección de datos</label>
+        </p>
+
+        <p>
+            <input type="submit" name="submit" value="Enviar">
+        </p>
+
+
+    </form>
+</body>
+
+</html>

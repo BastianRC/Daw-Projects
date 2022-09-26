@@ -1,0 +1,17 @@
+/*html{
+    height: 100vh;
+}*/
+
+body{
+    background-image: url("https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg");
+    /*background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;*/
+}
+
+h1{
+    color: rgba(233, 100, 98, .5);
+}
+
+/* Para que solo aparezca la imagen una vez pegado a la derecha usaria el atributo background-repeat: no-repeat; y
+los atributos background-position-x background-position-y*/

@@ -1,0 +1,23 @@
+
+/* Todos los parrafos se centran y se vuelven de color azul */
+p{
+    text-align: center;
+    color: blue;
+}
+
+/* Todos los parrafos con el id en concreto se vuelven de color rojo */
+#one{
+    color: red;
+}
+
+/* Todos los H1 se vuelven de color rojo con un selector */
+
+.two{
+    color: red;
+}
+
+/* Todos los H1 y H2 se centran */
+
+h1, h2{
+    text-align: center;
+}
