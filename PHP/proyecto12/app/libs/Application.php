@@ -1,7 +1,7 @@
 <?php
 
 /**
- * La clase application maneja la URL y maneja los procesos
+ * La clase Application maneja la URL y lanza los procesos
  */
 
 class Application
@@ -10,26 +10,43 @@ class Application
     private $urlAction = null;
     private $urlParams = [];
 
-
     function __construct()
     {
-        $db = Mysqldb::getInstance()->getDatabase();
+        $this->separarUrl();
 
-        $url = $this->separarURL();
-
-        if (!$this->urlController) {
-            require_once '../app/controllers/loginController.php';
-            $page = new loginController();
+        if ( ! $this->urlController ) {
+            require_once '../app/controllers/LoginController.php';
+            $page = new LoginController();
             $page->index();
-        } else if (file_exists('../controllers/' . ucfirst($this->urlController) . 'Controller.php')) {
-            $controller = ucfirst($this->urlController) . 'Controller.php';
+        } elseif (file_exists('../app/controllers/' . ucfirst($this->urlController) . 'Controller.php')) {
+            $controller = ucfirst($this->urlController) . 'Controller';
             require_once '../app/controllers/' . $controller . '.php';
             $this->urlController = new $controller;
-            $this->urlController->index();
+
+            if (method_exists($this->urlController, $this->urlAction) &&
+                is_callable(array($this->urlController, $this->urlAction))) {
+                if ( ! empty($this->urlParams) ) {
+                    call_user_func_array(array($this->urlController, $this->urlAction), $this->urlParams);
+                } else {
+                    $this->urlController->{$this->urlAction}();
+                }
+            } else {
+                if (strlen($this->urlAction) == 0) {
+                    $this->urlController->index();
+                } else {
+                    header('HTTP/1.0 404 Not Found');
+
+                    // Tratamos el error producido cuando creemos el controlador de Error
+                }
+            }
+        } else {
+            require_once '../app/controllers/LoginController.php';
+            $page = new LoginController();
+            $page->index();
         }
     }
 
-    public function separarURL()
+    public function separarUrl()
     {
         if ($_SERVER['REQUEST_URI'] != '/') {
             $url = trim($_SERVER['REQUEST_URI'], '/');
