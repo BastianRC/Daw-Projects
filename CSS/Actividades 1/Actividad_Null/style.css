@@ -1,0 +1,17 @@
+body{
+    background-color: #C7C8D2;
+}
+
+h1{
+    text-align: center;
+}
+
+.ficha-futbol{
+    margin: 0px 50px;
+    padding: 5px;
+    background-color: red;
+}
+
+.ficha-futbol .datos{
+    
+}

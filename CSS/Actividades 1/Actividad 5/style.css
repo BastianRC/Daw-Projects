@@ -1,17 +1,159 @@
-body{
-    background-color: #C7C8D2;
+body {
+    background-image: url("imgs/bg_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-h1{
+.one {
+    border: 2px solid #000000;
+    color: #ff0000;
     text-align: center;
 }
 
-.ficha-futbol{
-    margin: 0px 50px;
-    padding: 5px;
-    background-color: red;
+.two {
+    border: 2px dotted #155e12;
+    color: #d0ff00;
+    text-align: justify;
 }
 
-.ficha-futbol .datos{
-    
+.three {
+    border: 2px dashed #391ce0;
+    color: #002fff;
+    word-spacing: 10px;
+}
+
+.four {
+    border: 2px double #379292;
+    color: #ff008c;
+    text-decoration: line-through;
+}
+
+.five {
+    border: 2px groove #ce7227;
+    color: #365f61;
+    text-transform: uppercase;
+}
+
+.six {
+    border: 2px ridge #a55e5e;
+    color: #5c4d25;
+    direction: rtl;
+}
+
+.seven {
+    border: 2px inset #000000;
+    color: #ff0000;
+    text-indent: 50px
+}
+
+.eight {
+    border: 2px outset #39125e;
+    color: #ff9462;
+    letter-spacing: 3px;
+}
+
+.nine {
+    border: 2px none #053b11;
+    color: #5d7461;
+    line-height: 0.8;
+}
+
+.ten {
+    border: 2px hidden #f7ff88;
+    color: #752953;
+    text-shadow: 3px 2px rgb(255, 0, 0);
+}
+
+.pOne p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pTwo p {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+a {
+    color: #ff0000;
+}
+
+a:focus {
+    font-size: 25px;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.buttons a {
+    background-color: #747474;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    padding: 15px;
+}
+
+.buttons a:focus {
+    color: #000000;
+}
+
+.art {
+    text-align: right;
+}
+
+h1, h2{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button_head{
+    margin-top: 40px;
+}
+
+.button_head a {
+    background-color: #3386ff;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button_head a:hover {
+    padding: 15px;
+}
+
+.button_head a:focus {
+    color: #000000;
+}
+
+.button_footer{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.button_footer a {
+    background-color: #ff3333;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button_footer a:hover {
+    padding: 15px;
+}
+
+.button_footer a:focus {
+    color: #000000;
 }

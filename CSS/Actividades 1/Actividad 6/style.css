@@ -1,0 +1,47 @@
+.or ul{
+    list-style-type: square;
+}
+
+.des ol{
+    list-style-type: upper-roman;
+}
+
+.or li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.des li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.one li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.one{
+    background-color: #f12f23;
+    display: inline-block;
+    padding: 20px;
+    color: #15fc33;
+    border: 3px solid #33ffda;
+    margin-bottom: 5px;
+}
+
+.two .or{
+    background-color: #f63f83;
+    padding: 10px;
+    display: inline-block;
+    color: #a93933;
+    border: 3px solid #6a2b0f;
+}
+
+.two .des{
+    background-color: #f67f23;
+    display: inline-block;
+    padding: 10px;
+    color: #fffc33;
+    border: 3px solid #8033ff;
+}
+
+
+
