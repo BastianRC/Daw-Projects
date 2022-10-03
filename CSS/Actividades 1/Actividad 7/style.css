@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg_all {
+    background-image: url("imgs/bg_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.one,
+.two,
+.three {
+    width: 650px;
+    height: 650px;
+    max-width: 650px;
+    opacity: 0.3;
+}
+
+.one {
+    background-color: #ff0000;
+}
+
+.two {
+    background-color: #ecff00;
+}
+
+.three {
+    background-color: #001fff;
+}
+
+.one:hover {
+    opacity: 0.6;
+}
+
+.two:hover {
+    opacity: 0.9;
+}
+
+.three:hover {
+    opacity: 0.1;
+}
+
+.bg_left {
+    width: 650px;
+    height: 650px;
+    float: left;
+}
