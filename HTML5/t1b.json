@@ -1,0 +1,44 @@
+{
+    "contenedores":[{
+        "tipo":"Grande",
+        "envases":[{
+            "tipo":"Grande Ancho",
+            "liquidos":[
+                {"tipo":"Alimento", "text":"Agua"}, {"tipo":"Alimento", "text":"Leche"}
+            ]
+        }]},
+
+        {
+        "tipo":"Medianos",
+        "envases":[{
+            "tipo":"Mediano Ancho",
+            "liquidos":[
+                {"tipo":"Alimento", "text":"Aceite"}, {"tipo":"Alimento", "text":"Vinagre"}
+            ]
+        }, {
+            "tipo":"Pequeño",
+            "liquidos":[
+                {"tipo":"Sustancia Corrosiva", "text":"Lejía"}, {"tipo":"Sustancia Corrosiva", "text":"Amoniaco"}
+            ]
+        }]},
+        
+        {
+        "tipo":"Verticales",
+        "envases":[{
+            "tipo":"Grande alto",
+            "liquidos":[
+                {"tipo":"Alimento", "text":"Agua"}, {"tipo":"Alimento", "text":"Leche"}
+            ]
+        }, {
+            "tipo":"Mediano alto",
+            "liquidos":[
+                {"tipo":"Sustancia Corrosiva", "text":"Jabón"}, 
+                {"tipo":"Sustancia Corrosiva", "text":"Aguarrás"}, 
+                {"tipo":"Sustancia Corrosiva", "text":"Gasolina"},
+                {"tipo":"Sustancia Corrosiva", "text":"Alcohol"}
+            ]
+        }]
+
+    }]
+
+}
