@@ -6,6 +6,7 @@ ini_set('display_errors', 1);
 
 define('ROOT', DIRECTORY_SEPARATOR);
 define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);
+define('ENCRIPTKEY', 'elperrodesanroque');
 
 // Carga las clases iniciales
 require_once('libs/Mysqldb.php');
