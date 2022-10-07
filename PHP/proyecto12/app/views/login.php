@@ -16,10 +16,11 @@
                 <label for="password">Clave de acceso:</label>
                 <input type="password" name="password" class="form-control"
                     placeholder="Escribe la contraseña"
+                    value="<?= $data['data']['password'] ?? '' ?>"
                 >
             </div>
             <div class="form-group text-left">
-                <input type="submit" value="Enviar" class="btn btn-success mt-3 mb-3">
+                <input type="submit" value="Enviar" class="btn btn-success">
             </div>
             <div class="form-group text-left">
                 <input type="checkbox" name="remember"
