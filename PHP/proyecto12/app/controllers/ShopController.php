@@ -22,6 +22,5 @@ class ShopController extends Controller
         } else {
             header('location:' . ROOT);
         }
-
     }
 }
