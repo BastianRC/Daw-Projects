@@ -1,0 +1,31 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.one {
+    background-color: #be4040;
+    transform: rotate(-180deg);
+}
+
+.two {
+    background-color: #b1be40;
+    transform: translate(100px, 30px);
+}
+
+.three {
+    background-color: #40bea3;
+    transform: skewX(30deg);
+}
+
+.four {
+    background-color: #9a40be;
+    transform: scale(2);
+}

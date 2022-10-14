@@ -13,7 +13,7 @@ h1 {
 }
 
 div {
-    width: 350px;
+    width: 300px;
 }
 
 p {
@@ -39,6 +39,7 @@ p {
     display: inline-block;
     position: relative;
     top: 10px;
+    z-index: -1;
 
 }
 
@@ -50,23 +51,40 @@ p {
     float: right;
     position: relative;
     top: 10px;
+    text-align: right;
 }
 
 .four {
-    background-color: #C6FFFF;
+    background-color: #FFE5FF;
     height: 150px;
-    border: solid 2px #9AC4C4;
+    border: solid 2px #BAA7BA;
     padding: 5px;
     display: inline-block;
     position: relative;
     top: 50px;
+    z-index: -1;
 }
 
 .five {
-    background-color: #C6FFFF;
+    background-color: #FFB4B4;
     height: 150px;
-    border: solid 2px #9AC4C4;
+    border: solid 2px #865F5F;
     padding: 5px;
+    z-index: -1;
     position: relative;
     top: 50px;
+    float: right;
+    text-align: right;
+}
+
+.six {
+    background-color: #91FF91;
+    height: 150px;
+    border: solid 2px #57A657;
+    padding: 5px;
+    display: inline;
+    z-index: -1;
+    position: absolute;
+    top: 250px;
+    left: 300px;
 }

@@ -1,0 +1,26 @@
+div {
+    width: 300px;
+}
+
+.one {
+    position: static;
+}
+
+.two {
+    position: relative;
+}
+
+.three {
+    position: fixed;
+    left: 40%;
+}
+
+.four {
+    position: absolute;
+    left: 40%;
+    top: 90%;
+}
+
+.five {
+    position: sticky;
+}
