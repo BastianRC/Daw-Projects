@@ -1,53 +1,76 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-.bg_all {
-    background-image: url("imgs/bg_1.jpg");
-    background-repeat: no-repeat;
+body {
+    background-image: url('imgs/bg_1.jpg');
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
-
-.one,
-.two,
-.three {
-    width: 650px;
-    height: 650px;
-    max-width: 650px;
-    opacity: 0.3;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 .one {
-    background-color: #ff0000;
+    background-color: #FF0000;
+    height: 650px;
+    max-width: 650px;
+    opacity: 0.4;
+    box-shadow: inset 10px 10px 0px #000000;
 }
 
 .two {
-    background-color: #ecff00;
+    background-color: #FFFF00;
+    height: 650px;
+    max-width: 650px;
+    opacity: 0.7;
+    box-shadow: 10px 10px 20px #000000
 }
 
 .three {
-    background-color: #001fff;
+    background-color: #0000FF;
+    height: 650px;
+    max-width: 650px;
+    opacity: 0.2;
+    box-shadow: 0px 0px 10px 10px #000000
 }
 
 .one:hover {
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 .two:hover {
-    opacity: 0.9;
+    opacity: 0.4;
 }
 
 .three:hover {
-    opacity: 0.1;
+    opacity: 0.7;
 }
 
-.bg_left {
-    width: 650px;
-    height: 650px;
-    float: left;
+.bg_two {
+    background-image: url('imgs/bg_2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 650px;
+    height: 100vh;
+}
+
+p {
+    width: 300px;
+}
+
+.one p {
+    word-break: break-all;
+}
+
+.two p {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.three p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
