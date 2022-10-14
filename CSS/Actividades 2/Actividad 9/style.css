@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    width: 350px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.one {
+    background-color: #DBC9A6;
+    width: 90%;
+    height: 40px;
+    border: solid 2px #9F9279;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
+
+.two {
+    background-color: #FFFFB4;
+    height: 150px;
+    border: solid 2px #bdbd85;
+    padding: 5px;
+}
+
+.three {
+    background-color: #FFFFB4;
+    height: 150px;
+    border: solid 2px #bdbd85;
+    padding: 5px;
+}

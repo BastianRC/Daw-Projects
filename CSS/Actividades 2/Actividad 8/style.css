@@ -1,0 +1,15 @@
+div {
+    width: 500px;
+}
+
+.one {
+    display: inline;
+}
+
+.two {
+    display: inline-block;
+}
+
+.three {
+    display: block;
+}
