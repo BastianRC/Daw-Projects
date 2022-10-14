@@ -36,11 +36,37 @@ p {
     height: 150px;
     border: solid 2px #bdbd85;
     padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+
 }
 
 .three {
-    background-color: #FFFFB4;
+    background-color: #C6FFFF;
     height: 150px;
-    border: solid 2px #bdbd85;
+    border: solid 2px #9AC4C4;
     padding: 5px;
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.four {
+    background-color: #C6FFFF;
+    height: 150px;
+    border: solid 2px #9AC4C4;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+}
+
+.five {
+    background-color: #C6FFFF;
+    height: 150px;
+    border: solid 2px #9AC4C4;
+    padding: 5px;
+    position: relative;
+    top: 50px;
 }
