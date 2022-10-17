@@ -1,0 +1,72 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    letter-spacing: -1em;
+}
+
+body>* {
+    letter-spacing: normal;
+}
+
+header {
+    background-color: #FE0000;
+    width: 100vw;
+    height: 10vh;
+}
+
+header h1 {
+    margin: 0px;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.latOne {
+    background-color: #008081;
+    width: 25vw;
+    height: 80vh;
+    display: inline-block;
+    /*Change*/
+}
+
+section {
+    background-color: #FFC0CB;
+    width: 50vw;
+    height: 80vh;
+    display: inline-block;
+    /*Change*/
+}
+
+.latTwo {
+    background-color: #008001;
+    width: 25vw;
+    height: 80vh;
+    display: inline-block;
+    /*Change*/
+}
+
+footer {
+    background-color: #FFFF01;
+    width: 100vw;
+    height: 10vh;
+    /*Change*/
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 0.5em 0px;
+}
