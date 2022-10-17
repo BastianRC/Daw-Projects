@@ -1,0 +1,39 @@
+.one {
+    background-color: #FF0000;
+    border: 2px solid #00ff2a;
+    width: 100px;
+    height: 100px;
+    animation: moveRight 4s infinite;
+}
+
+@keyframes moveRight {
+    100% {
+        transform: translateX(100px);
+        background-color: #e5ff00;
+        border: 2px solid #0004f7;
+    }
+}
+
+.two {
+    background-color: #FF0000;
+    border: 2px solid #00ff2a;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: moveSquare 10s;
+}
+
+@keyframes moveSquare {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(100px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+
+}
