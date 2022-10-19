@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <style>
+        .one {
+            background-color: #FF0000;
+            width: 250px;
+            height: 250px;
+        }
+
+        .two {
+            background-color: #0000FF;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .three {
+            background-color: #00FF00;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="three">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let divs = document.getElementsByTagName('div');
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].addEventListener('click', () => {
+                console.log(divs[i]);
+            }, true);
+        }
+    </script>
+</body>
+
+</html>
