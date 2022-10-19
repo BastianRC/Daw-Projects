@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 10</title>
+
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+        }
+
+        .one {
+            background-color: #FF0000;
+        }
+
+        .two {
+            background-color: #0000FF;
+        }
+
+        .three {
+            background-color: #00FF00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+
+    </div>
+
+    <div class="two">
+
+    </div>
+
+    <div class="three">
+
+    </div>
+
+    <script>
+        let element = document.getElementsByTagName('div');
+        let lastElement = element[element.length - 1];
+        element[0].insertAdjacentElement('beforebegin', lastElement)
+    </script>
+</body>
+
+</html>

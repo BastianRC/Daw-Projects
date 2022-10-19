@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 8</title>
+
+    <style>
+        div {
+            background-color: #FF0000;
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+
+    <script>
+        let element = document.getElementsByTagName('div');
+        element[0].insertAdjacentHTML('beforebegin', '<h1>Actividad 7</h1>');
+        element[0].insertAdjacentHTML('beforeend', '<p>Texto</p>');
+        element[0].insertAdjacentHTML('afterbegin', '<h3>Introduccion</h3>');
+        element[0].insertAdjacentHTML('afterend', '<h2>Diego Ruiz</h2>');
+    </script>
+</body>
+
+</html>
