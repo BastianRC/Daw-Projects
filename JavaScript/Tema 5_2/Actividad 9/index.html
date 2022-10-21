@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 9</title>
+</head>
+
+<body>
+
+    <script>
+        const regexObj = {
+            DNI: /[0-9]{8,8}-?[A-Za-z]/g,
+            IBAN: /([a-zA-Z]{2})\s*\t*(\d{2})\s*\t*(\d{4})\s*\t*(\d{4})\s*\t*(\d{2})\s*\t*(\d{10})/g,
+            CAR_REG: /^[0-9]{4}[BCDFGHJKLMNPRSTVWXYZ]{3}$/g,
+            DATE: /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/g
+        };
+
+        let text = prompt('Introduce un texto (DNI, IBAN, Matricula, Fecha)');
+        
+        for (const i in regexObj) {
+            while ((match = regexObj[i].exec(text)) !== null) {
+                match.forEach((text) => {
+                    console.log(`El texto ${text} cumple con la ER de ${i}.`);
+                });
+            }
+        }
+
+    </script>
+</body>
+
+</html>
