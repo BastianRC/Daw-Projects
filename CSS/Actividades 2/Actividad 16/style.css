@@ -1,0 +1,48 @@
+a {
+    background-color: #FF0000;
+    width: 500px;
+    height: 500px;
+    display: block;
+    text-align: center;
+    line-height: 500px;
+}
+
+
+.one:link {
+    background-color: #DD00FF;
+}
+
+.two:visited {
+    background-color: rgb(0, 255, 0);
+}
+
+.three:hover {
+    background-color: #ff6600;
+}
+
+.four:active {
+    background-color: #2f00ff;
+}
+
+.five::first-line {
+    color: #FF0000;
+    font-variant: small-caps;
+}
+
+.six::first-letter {
+    color: #00ff4c;
+    font-size: xx-large;
+}
+
+.seven::before {
+    content: url('https://www.w3schools.com/css/img_5terre.jpg');
+}
+
+.seven::after {
+    content: url('https://www.w3schools.com/css/img_lights.jpg');
+}
+
+.eight::selection {
+    color: #ffbb00;
+    background-color: #2f00ff;
+}

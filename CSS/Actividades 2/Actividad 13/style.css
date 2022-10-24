@@ -15,25 +15,47 @@
 }
 
 .two {
-    background-color: #FF0000;
-    border: 2px solid #00ff2a;
+    margin-top: 20px;
     width: 100px;
     height: 100px;
-    position: relative;
-    animation: moveSquare 10s;
+    background-color: rgb(31, 189, 189);
+    border: 2px solid rgb(5, 255, 5);
+    animation: moverSquare 8s alternate infinite linear;
 }
 
-@keyframes moveSquare {
-    0% {
-        transform: translateX(0px);
-    }
-
+@keyframes moverSquare {
     25% {
-        transform: translateX(100px);
+        background-color: rgb(31, 189, 189);
+        border: 2px solid rgb(5, 255, 5);
+        border-radius: 25px;
+        transform: translate(100px);
+        width: 75px;
+        height: 75px;
     }
 
     50% {
-        transform: translateY(100px);
+        background-color: rgb(213, 122, 255);
+        border: 2px solid rgb(255, 238, 0);
+        border-radius: 50px;
+        transform: translate(100px, 100px);
+        width: 75px;
+        height: 75px;
+    }
+
+    75% {
+        background-color: rgb(213, 122, 255);
+        border: 2px solid rgb(255, 238, 0);
+        border-radius: 25px;
+        transform: translate(0px, 100px);
+        width: 75px;
+        height: 75px;
+    }
+
+    100% {
+        background-color: rgb(31, 189, 189);
+        border: 2px solid rgb(5, 255, 5);
+        width: 100px;
+        height: 100px;
     }
 
 }

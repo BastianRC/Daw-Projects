@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 14</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>Table</h1>
+
+    <table border="true">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name<br></th>
+                <th>Point</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Peter</td>
+                <td rowspan="2">Griffin</td>
+                <td><i class="icon fa-solid fa-dollar-sign"></i>100</td>
+            </tr>
+            <tr>
+                <td class="lois_name">Lois</td>
+                <td class="lois_points"><i class="icon fa-solid fa-dollar-sign"></i>150</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Joe</td>
+                <td>Swanson</td>
+                <td class="joe_points"><i class="icon fa-solid fa-dollar-sign"></i>300</td>
+            </tr>
+            <tr>
+                <td class="brown_name">Brown</td>
+                <td class="brown_points"><i class="icon fa-solid fa-dollar-sign"></i>250</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td class="total_points"><i class="icon fa-solid fa-dollar-sign"></i>800</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>Table 1.- Revenues</p>
+    </footer>
+</body>
+
+</html>

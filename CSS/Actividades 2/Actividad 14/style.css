@@ -1,0 +1,38 @@
+table {
+    width: 700px;
+    text-align: left;
+    font-size: 15px;
+}
+
+thead {
+    background-color: #FFFF00;
+}
+
+td {
+    background-color: #F2F2F2;
+}
+
+.lois_name,
+.lois_points,
+.brown_name,
+.brown_points {
+    background-color: #008080;
+}
+
+.joe_points {
+    background-color: #000000;
+    border: 2px solid #FFFF00;
+    color: #FFFFFF;
+}
+
+.total_points {
+    background: repeating-linear-gradient(135deg, #3F95D2 40%, #84AED1 100%);
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+footer p {
+    text-align: center;
+}
