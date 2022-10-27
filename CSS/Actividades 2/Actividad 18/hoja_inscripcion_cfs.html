@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hoja de inscripción Ciclos Formativos de Grado Superior. Ejercico15</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Hoja de inscripción<br />
+    en los ciclos formativos de grado superior</h1>
+
+  <form action="">
+    <fieldset id="a">
+      <legend>Datos personales<a href="#L486">(*)</a></legend>
+      <table border="0">
+        <tbody>
+          <tr>
+            <td>Apellidos:<br />
+              <input type="text" name="a01" size="40" />
+            </td>
+            <td>Nombre:<br />
+              <input type="text" name="a02" size="20" />
+            </td>
+            <td>DNI:<br />
+              <input type="text" name="a03" maxlength="11" size="12" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nacido/a en:<br />
+              <input type="text" name="a04" size="30" />
+            </td>
+            <td>Provincia:<br />
+              <select name="a05">
+                <option value="Murcia" selected="selected">Murcia</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </td>
+            <td>Fecha nacimiento (dd/mm/aaaa):<br />
+              <input type="text" name="a06" maxlength="10" size="12" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">Domicilio (Calle, plaza y n�mero):<br />
+              <input type="text" name="a07" size="60" />
+            </td>
+            <td>C�digo Postal:<br />
+              <input type="text" name="a08" maxlength="5" size="6" />
+            </td>
+          </tr>
+          <tr>
+            <td>Localidad:<br />
+              <input type="text" name="a09" size="30" />
+            </td>
+            <td>Provincia:<br />
+              <select name="a10">
+                <option value="Murcia" selected="selected">Murcia</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </td>
+            <td>Tel�fono:<br />
+              <input type="text" name="a11" maxlength="9" size="10" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <fieldset id="b">
+      <legend>Requisitos de acceso</legend>
+      <table>
+        <tbody>
+          <tr>
+            <td><input type="radio" name="radiob1" value="b01" id="req_dir" /></td>
+            <td><label for="req_dir">Directo</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label><input type="radio" name="radiob2" value="b01a" />
+                Bachillerato LOMCE.</label> Modalidad: <input type="text" name="b01b" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label><input type="radio" name="radiob2" value="b01c" />
+                Bachillerato LOGSE</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label><input type="radio" name="radiob2" value="b02c" />
+                COU.</label> Opci�n: <input type="text" name="b02e" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label><input type="radio" name="radiob2" value="b02f" />
+                FP2</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label><input type="radio" name="radiob2" value="b02h" />
+                Otros</label> (especifique): <input type="text" name="b02h" /></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="radiob1" value="b01b" id="req_pru" /></td>
+            <td><label for="req_pru">Mediante prueba</label></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <fieldset id="c">
+      <legend>Solicitud</legend>
+      <p>El/la que suscribe desea ser admitido en este centro para cursar el
+        ciclo formativo de grado superior:</p>
+
+      <p>Ciclo formativo:
+        <select name="c01">
+          <option value="c01a" selected="selected"></option>
+          <option value="c01b">Administración de Sistemas Informáticos y en Red</option>
+          <option value="c01c">Desarrollo de Aplicaciones Multiplataforma</option>
+          <option value="c01d">Desarrollo de Aplicaciones Web</option>
+        </select>
+      </p>
+
+      <p>En caso de no ser admitido/a, solicita la admisi�n por orden de
+        preferencia en los siguientes:</p>
+
+      <table border="0">
+        <tbody>
+          <tr>
+            <th>Ciclos formativos</th>
+            <th>Centros</th>
+            <th>Localidad</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="c02a1" size="40" /></td>
+            <td><input type="text" name="co2a2" size="30" /></td>
+            <td><input type="text" name="c02a3" size="20" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="c02b1" size="40" /></td>
+            <td><input type="text" name="c02b2" size="30" /></td>
+            <td><input type="text" name="c02b3" size="20" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="c02c1" size="40" /></td>
+            <td><input type="text" name="c02c2" size="30" /></td>
+            <td><input type="text" name="c02c3" size="20" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><label>Modalidad de horario especial (marque): <input type="checkbox" name="c03" /></label></p>
+    </fieldset>
+    <fieldset id="d">
+      <legend>Documentación presentada</legend>
+      <table border="0">
+        <tbody>
+          <tr>
+            <td><label><input type="checkbox" name="d01" /> Fotocopia
+                DNI</label></td>
+            <td><label><input type="checkbox" name="d02" />Certificado
+                acad�mcio</label></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label><input type="checkbox" name="d03" /> Otros
+                documentos</label> (especifique):<input type="text" name="d04" size="40" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </form>
+  <fieldset id="e">
+    <legend>Comunicación</legend>
+    <p>De acuerdo con el artículo 42.2 de la Ley 30/1992, de 26 de noviembre,
+      de Régimen Jurídico de las Administraciones Públicas y del Procedimiento
+      Administrativo Común, según la nueva redacción de la Ley 4/1999, de 13 de
+      enero, se informa que:</p>
+    <ul>
+      <li>El plazo móximo para resolver la presente solicitud es de 3 meses
+        desde la fecha en que haya tenido entrada en el registro del �rgano
+        competente para la tramitación, sin perjuicio de lo previsto en el
+        art�culo 42.5 de la misma ley.</li>
+      <li>El efecto que producirá el silencio administrativo si transcurre el
+        plazo sin que se haya dictado y notificado la resolución
+        correspondiente, es desestimatorio de la solicitud.</li>
+    </ul>
+
+    <p><input type="text" name="e01" />, <input type="text" name="e02" size="3" maxlength="2" /> de <input type="text"
+        name="e03" size="15" maxlength="12" />de
+      <select name="c04">
+        <option selected="selected">2015</option>
+        <option value="c04b">2016</option>
+      </select>
+    </p>
+
+    <div id="registro">
+      <p>Registro de entrada</p>
+    </div>
+
+    <p></p>
+
+    <div id="firma">
+      <p>La persona solicitante,</p>
+    </div>
+
+    <p>Firma</p>
+
+    <p></p>
+  </fieldset>
+
+  <p class="pie" id="L486">(*) Los datos personales contenidos en este impreso
+    podr�n ser incluidos en un fichero para su tratamiento por la Conselleria de
+    Cultura y Educaci�n, en el uso de las funciones propias que tiene atribuidas
+    en el �mbito de sus competencias, pudiendo dirigirse a cualquier �rgano de la
+    misma para ejercitarlos derechos de acceso, rectificaci�n, cancelaci�n y
+    oposici�n, seg�n lo dispuesto en la Ley Org�nica 15/1999, de 13 de diciembre,
+    de Protecci�n de Datos de Car�cter Personal (BOE n�m 298, de 14 de diciembre
+    de 1999).</p>
+
+  <p class="grande">Director/a o titular del centro</p>
+</body>
+
+</html>
