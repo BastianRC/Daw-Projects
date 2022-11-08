@@ -1,0 +1,35 @@
+.main article{
+    display: block;
+}
+
+article h2 {
+    background-color: #5F34E1;
+    margin: 0;
+    padding: 2px 10px;
+    color: #FFFFFF;
+}
+
+/* PUERTA DEL SOL */
+
+#art_one {
+    display: flex;
+}
+
+/* PLAZA MAYOR */
+
+#art_two {
+    display: flex;
+    margin-top: 20px;
+}
+
+#art_two p{
+    margin: 0;
+    padding: 0 10px 21px 10px;
+}
+
+/* RETIRO */
+
+#art_three .text{
+    display: flex;
+    margin-top: 20px;
+}
