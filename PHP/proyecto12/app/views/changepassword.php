@@ -20,7 +20,7 @@
                     >
                 </div>
                 <div class="form-group text-left">
-                    <input type="submit" value="Enviar" class="btn btn-success mt-3">
+                    <input type="submit" value="Enviar" class="btn btn-success">
                 </div>
             </form>
         </div>
