@@ -1,0 +1,17 @@
+<!ELEMENT biblioteca (prestamos)>
+<!ELEMENT prestamos (datos, firma)>
+<!ATTLIST prestamos
+          fecha_entrega CDATA #REQUIRED
+          fecha_salida CDATA #REQUIRED
+          id CDATA #REQUIRED>
+<!ELEMENT datos (lector, libro)>
+<!ELEMENT lector (nombre, apellidos, domicilio, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT domicilio (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT libro (autor, titulo, clasificacion)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT clasificacion (#PCDATA)>
+<!ELEMENT firma (#PCDATA)>

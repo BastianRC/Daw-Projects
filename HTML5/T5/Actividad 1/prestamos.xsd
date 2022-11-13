@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="biblioteca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="prestamos"/>  
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="prestamos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="datos"/>
+        <xs:element ref="firma"/>
+      </xs:sequence>
+      <xs:attribute name="fecha_entrega" type="xs:string" use="required"/>
+      <xs:attribute name="fecha_salida" type="xs:string" use="required"/>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="datos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="lector"/>
+        <xs:element ref="libro"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="firma" type="xs:string"/>
+
+  <xs:element name="lector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="apellidos"/>
+        <xs:element ref="domicilio"/>
+        <xs:element ref="telefono"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="libro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="autor"/>
+        <xs:element ref="titulo"/>
+        <xs:element ref="clasificacion"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nombre" type="xs:string"/>
+
+  <xs:element name="apellidos" type="xs:string"/>
+
+  <xs:element name="domicilio" type="xs:string"/>
+
+  <xs:element name="telefono" type="xs:string"/>
+
+  <xs:element name="autor" type="xs:string"/>
+
+  <xs:element name="titulo" type="xs:string"/>
+
+  <xs:element name="clasificacion" type="xs:string"/>
+
+</xs:schema>

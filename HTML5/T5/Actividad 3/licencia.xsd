@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" >
+
+  <xs:element name="galicia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="licencias"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="licencias">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="licencia"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="licencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="dni"/>
+        <xs:element ref="clase"/>
+        <xs:element ref="caduca"/>
+      </xs:sequence>
+      <xs:attribute name="num" type="xs:string" use="required"/>
+      <xs:attribute name="tipo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nombre" type="xs:string"/>
+
+  <xs:element name="dni" type="xs:string"/>
+
+  <xs:element name="clase" type="xs:string"/>
+
+  <xs:element name="caduca" type="xs:string"/>
+
+</xs:schema>

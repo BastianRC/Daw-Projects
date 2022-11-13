@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE galicia SYSTEM "file:/C:/Users/DarkS/Documents/Daw-Projects/HTML5/T5/Actividad%203/licencia.dtd">
+<galicia>
+  <licencias>
+    <licencia tipo="Pesca Maritima de Recreo" num="22">
+      <nombre>Prueba Uno</nombre>
+      <dni>78128939J</dni>
+      <clase>S</clase>
+      <caduca>19/12/2022</caduca>
+    </licencia>
+    
+    <licencia tipo="Pesca Maritima de Recreo" num="23">
+      <nombre>Prueba Dos</nombre>
+      <dni>38154978J</dni>
+      <clase>A</clase>
+      <caduca>01/12/2022</caduca>
+    </licencia>
+  </licencias>
+</galicia>

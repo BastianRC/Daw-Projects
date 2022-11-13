@@ -1,0 +1,11 @@
+<!ELEMENT galicia (licencias)>
+<!ELEMENT licencias (licencia+)>
+<!ELEMENT licencia (nombre, dni, clase, caduca)>
+<!ATTLIST licencia
+    num CDATA #REQUIRED
+    tipo CDATA #REQUIRED
+>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT clase (#PCDATA)>
+<!ELEMENT caduca (#PCDATA)>

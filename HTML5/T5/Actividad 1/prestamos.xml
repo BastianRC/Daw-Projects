@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/DarkS/Documents/Daw-Projects/HTML5/T5/Actividad%201/prestamos.xsd">
+  <prestamos id="1" fecha_salida="01/01/2022" fecha_entrega="01/11/2022">
+    <datos>
+      <lector>
+        <nombre>Prueba</nombre>
+        <apellidos>Numero Uno</apellidos>
+        <domicilio>Calle Falsa 1</domicilio>
+        <telefono>678968974</telefono>
+      </lector>
+      
+      <libro>
+        <autor>Patrick Rothfuss</autor>
+        <titulo>El nombre del viento</titulo>
+        <clasificacion>Novela</clasificacion>
+      </libro>
+    </datos>
+    
+    <firma>Prueba Numero Uno</firma>
+  </prestamos>
+</biblioteca>
