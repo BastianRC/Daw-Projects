@@ -24,7 +24,8 @@ class LoginController extends Controller
         print('Estoy en olvido');
     }
 
-    public function registro(){
+    public function registro()
+    {
         $data = [
             'titulo' => 'Registro',
             'menu' => 'false'

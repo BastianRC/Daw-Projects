@@ -5,7 +5,7 @@
         <h1 class="text-center">Login</h1>
     </div>
     <div class="card-body">
-        <form action="login/verifyUser/" method="POST">
+        <form action="<?= ROOT ?>login/verifyUser/" method="POST">
             <div class="form-group text-left">
                 <label for="user">Usuario:</label>
                 <input type="text" name="user" class="form-control">
@@ -26,8 +26,8 @@
     <div class="card-footer">
         <div class="row">
             <div class="col-sm-12 d-flex justify-content-center">
-                <a href="login/registro" class="btn btn-info">Nuevo usuario</a>
-                <a href="login/olvido" class="btn btn-info ms-3">Recordar Contraseña</a>
+                <a href="<?= ROOT ?>login/registro" class="btn btn-info">Nuevo usuario</a>
+                <a href="<?= ROOT ?>login/olvido" class="btn btn-info ms-3">Recordar Contraseña</a>
             </div>
 
         </div>
