@@ -62,7 +62,7 @@ class LoginController extends Controller
                 array_push($errors, 'La contraseña es requerido');
             }
             if ($password2 == '') {
-                array_push($errors, 'Repetir contraseña es requerido');
+                array_push($errors, 'Repetir la contraseña es requerido');
             }
             if ($address == '') {
                 array_push($errors, 'La dirección es requerida');
@@ -86,9 +86,15 @@ class LoginController extends Controller
             if (count($errors) == 0) {
                 print('Pasamos a dar de alta al usuario en la BD');
 
-            } else {
-                var_dump($errors);
+            } else { // Si hay errores cargara la vista con todos los datos en los inputs y un mensaje de error
+                $data = [
+                    'titulo' => 'Registro',
+                    'menu' => 'false',
+                    'errors' => $errors,
+                    'dataForm' => $dataForm
+                ];
 
+                $this->view('register', $data);
             }
 
         } else {
