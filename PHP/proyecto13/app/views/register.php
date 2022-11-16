@@ -26,6 +26,10 @@
                 <input type="password" name="password" id="password" class="form-control" required placeholder="Escriba su contraseña">
             </div>
             <div class="form-group text-left">
+                <label for="password2">Repita su clave de acceso:</label>
+                <input type="password" name="password2" id="password2" class="form-control" required placeholder="Repita su contraseña">
+            </div>
+            <div class="form-group text-left">
                 <label for="address">Dirección:</label>
                 <input type="text" name="address" id="address" class="form-control" required placeholder="Escriba su dirección" value="<?php isset($data['dataForm']['address']) ? print $data['dataForm']['address'] : '' ?>">
             </div>

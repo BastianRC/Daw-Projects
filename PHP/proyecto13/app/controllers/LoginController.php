@@ -84,7 +84,13 @@ class LoginController extends Controller
             }
 
             if (count($errors) == 0) {
-                print('Pasamos a dar de alta al usuario en la BD');
+                if($this->model->createUser($dataForm)) {
+                    print('Registro insertado correctamente');
+
+                } else {
+                    print('No se pudo insertar');
+                    
+                }
 
             } else { // Si hay errores cargara la vista con todos los datos en los inputs y un mensaje de error
                 $data = [
