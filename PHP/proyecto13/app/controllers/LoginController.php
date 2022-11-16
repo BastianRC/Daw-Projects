@@ -26,7 +26,7 @@ class LoginController extends Controller
 
     public function registro()
     {
-        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $errors = [];
 
             // Procesamos la información recibida del formulario y lo guardamos en un array.
@@ -84,15 +84,39 @@ class LoginController extends Controller
             }
 
             if (count($errors) == 0) {
-                if($this->model->createUser($dataForm)) {
-                    print('Registro insertado correctamente');
+                if ($this->model->createUser($dataForm)) {
+                    $data = [
+                        'titulo' => 'Bienvenido',
+                        'menu' => false,
+                        'errors' => [],
+                        'subtitle' => 'Bienvenido/a a nuestra tienda online',
+                        'text' => 'Gracias por su registro',
+                        'color' => 'alert-success',
+                        'url' => 'menu',
+                        'colorButton' => 'btn-success',
+                        'textButton' => 'Acceder',
+                    ];
 
-                } else {
-                    print('No se pudo insertar');
+                    $this->view('mensaje', $data);
                     
-                }
+                } else {
+                    $data = [
+                        'titulo' => 'Error',
+                        'menu' => false,
+                        'errors' => [],
+                        'subtitle' => 'Error en el proceso de registro.',
+                        'text' => 'Probablemente el correo utilizado ya exista. Pruebe con otro',
+                        'color' => 'alert-danger',
+                        'url' => 'login',
+                        'colorButton' => 'btn-danger',
+                        'textButton' => 'Regresar',
+                    ];
 
-            } else { // Si hay errores cargara la vista con todos los datos en los inputs y un mensaje de error
+                    $this->view('mensaje', $data);
+
+                }
+            // Si hay errores cargara la vista con todos los datos en los inputs y un mensaje de error
+            } else { 
                 $data = [
                     'titulo' => 'Registro',
                     'menu' => 'false',
@@ -102,7 +126,6 @@ class LoginController extends Controller
 
                 $this->view('register', $data);
             }
-
         } else {
             // Mostramos el formulario si el metodo es diferente a POST
 
@@ -110,7 +133,7 @@ class LoginController extends Controller
                 'titulo' => 'Registro',
                 'menu' => 'false'
             ];
-    
+
             $this->view('register', $data);
         }
     }
