@@ -16,7 +16,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-3">
-        <a href="<?= ROOT ?>" class="navbar-brand">Tienda</a>
+        <a href="<?= ROOT ?>" class="navbar-brand ms-3">Tienda</a>
 
         <div class="collapse navbar-collapse" id="menu">
             // Enlaces del menu para todos

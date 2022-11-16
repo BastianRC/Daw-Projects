@@ -49,7 +49,7 @@
                 <label for="country">País:</label>
                 <input type="text" name="country" id="country" class="form-control" required placeholder="Escriba su país">
             </div>
-            <div class="form-group text-left">
+            <div class="form-group text-left mt-2">
                 <input type="submit" value="Enviar datos" class="btn btn-success">
                 <a href="<?= ROOT ?>login/" class="btn btn-info">Cancelar</a>
             </div>

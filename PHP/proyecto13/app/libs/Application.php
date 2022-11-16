@@ -14,14 +14,14 @@ class Application
     {
         $this->separarUrl();
 
-        if ($this->urlController) {
+        if (!$this->urlController) {
             require_once('../app/controllers/LoginController.php');
             $page = new LoginController();
             $page->index();
 
         } elseif (file_exists('../app/controllers/' . ucfirst($this->urlController) . 'Controller.php')) {
             $controller = ucfirst($this->urlController) . 'Controller';
-            require_once('../app/controllers/' . $controller . 'php');
+            require_once('../app/controllers/' . $controller . '.php');
 
             $this->urlController = new $controller;
 
