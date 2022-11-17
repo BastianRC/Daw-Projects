@@ -1,0 +1,142 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+/* VARIABLES */
+$FONT_PRIMARY: #000000;
+$FONT_SECUNDARY: #FFFFFF;
+$FONT_HOVER_PRIMARY: #FF0000;
+
+$FONT_SIZE: 1rem;
+
+$BG_PRIMARY: #000000;
+
+
+
+/* DEFAULT */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: $FONT_SIZE;
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+        color: $FONT_PRIMARY;
+    }
+}
+
+h1 {
+    font-size: calc($FONT_SIZE + 200%);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: calc($FONT_SIZE + 100%);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: calc($FONT_SIZE + 50%);
+    font-weight: 700;
+}
+
+/* HEADER */
+header {
+    background-color: $BG_PRIMARY;
+    color: $FONT_SECUNDARY;
+    padding: 10px;
+
+    a {
+        display: flex;
+        color: $FONT_SECUNDARY;
+
+        img {
+            width: 10%;
+            justify-self: start;
+
+        }
+
+        h1 {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/* MENU */
+nav {
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        li {
+            padding: 10px 0 10px 20px;
+            text-transform: uppercase;
+            font-size: calc($FONT_SIZE + 110%);
+            font-weight: 400;
+
+            a:hover {
+                color: $FONT_HOVER_PRIMARY;
+            }
+        }
+
+        li:hover {
+            font-weight: 700;
+            color: $FONT_HOVER_PRIMARY;
+        }
+    }
+}
+
+/* SECTION */
+section {
+    min-height: 20em;
+}
+
+/* FOOTER*/
+footer {
+    div,
+    p {
+        background-color: $BG_PRIMARY;
+        margin-top: 10px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: 0 10px;
+        }
+
+        img {
+            width: 3em;
+        }
+    }
+
+    p {
+        color: $FONT_SECUNDARY;
+        font-size: calc($FONT_SIZE + 80%);
+        text-align: center;
+
+        a {
+            color: $FONT_SECUNDARY;
+        }
+    }
+}
