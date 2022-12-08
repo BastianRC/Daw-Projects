@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+</head>
+
+<body>
+    <input type="button" value="Crear cookie" onclick="createCookie('Diego')">
+    <input type="button" value="Borrar cookie" onclick="deleteCookie('nombre')">
+    <input type="button" value="Inserta propiedad en LS" onclick="createLS('Diego')">
+    <input type="button" value="Elimina propiedad en LS" onclick="deleteLS('nombre')">
+    <input type="button" value="Consultar cookies" onclick="showCookies()">
+    <input type="button" value="Consulta LS" onclick="showLS('nombre')">
+
+    <script>
+        createCookie = (name) => {
+            document.cookie = `nombre=${name}`;
+            console.log('Cookie creada');
+        }
+
+        deleteCookie = (nameCookie) => {
+            document.cookie = `${nameCookie}= ;expires=Thu, 01 Jan 1970 00:00:00 UTC`;
+            console.log('Cookie borrada');
+        }
+
+        showCookies = () => {
+            let cookies = document.cookie.split(';');
+            
+            document.getElementById('list') != null ? document.getElementById('list').remove() : '';
+            document.body.insertAdjacentHTML('beforeend', '<div id="list"><ul id="list-cookies"></ul></div>');
+
+            cookies.forEach((value) => {
+                document.getElementById('list-cookies').insertAdjacentHTML('beforeend', `<li>${value}</li>`);
+            });
+
+            console.log('Cookie mostrada');
+        }
+
+        createLS = (name) => {
+            window.localStorage.setItem('nombre', name);
+            console.log('LS creado');
+        }
+
+        deleteLS = (nameLS) => {
+            window.localStorage.removeItem(nameLS);
+            console.log('LS eliminado');
+        }
+
+        showLS = (nameLS) => {
+            let ls = window.localStorage.getItem(nameLS);
+
+            document.getElementById('list') != null ? document.getElementById('list').remove() : '';
+            document.body.insertAdjacentHTML('beforeend', `<div id="list"><p id="list-ls">${ls}</p></div>`);
+
+            console.log('LS mostrado');
+        }
+
+    </script>
+</body>
+
+</html>

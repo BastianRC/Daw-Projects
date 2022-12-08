@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+</head>
+
+<body>
+    <form method="post">
+        <div class="group_name">
+            <label for="name">Nombre: </label>
+            <input type="text" name="name" id="name" required>
+            <span id="error_name"></span>
+        </div>
+
+        <div class="group_tlf">
+            <label for="tlf">Telefono: </label>
+            <input type="tel" name="tlf" id="tlf" minlength="9" required>
+        </div>
+
+        <div class="group_age">
+            <label for="age">Edad: </label>
+            <input type="number" name="age" id="age" value="18" min="18" max="120" required>
+        </div>
+
+        <div class="group_status">
+            <label for="status">Estado: </label>
+            <input type="radio" name="status" id="status">
+            <label for="casado">Casado</label>
+            <input type="radio" name="status" id="status" checked>
+            <label for="soltero">Soltero</label>
+        </div>
+
+        <div class="group_pass">
+            <label for="pass">Contraseña: </label>
+            <input type="password" name="pass" id="pass" pattern="(?=.{8,}$)(?=.*\d)(?=.*\W+)(?=.*[A-Z])(?=.*[a-z]).*"
+                required>
+        </div>
+
+        <div class="group_country">
+            <label for="country">Pais: </label>
+            <select name="country" id="country">
+                <option>USA</option>
+                <option>España</option>
+                <option>Peru</option>
+                <option>Francia</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <script>
+
+        const name = document.getElementById('name');
+        const pass = document.getElementById('pass');
+        const tlf = document.getElementById('tlf');
+        const country = document.getElementById('country');
+
+        name.addEventListener('input', (e) => {
+            console.log(e)
+            if (!/^[A-Z]/.test(e.srcElement.value.charAt(0)) && e.srcElement.value != '') {
+                name.setCustomValidity('La primera letra debe ser mayuscula.');
+            } else {
+                name.setCustomValidity('');
+            }
+        });
+
+        pass.addEventListener('input', (e) => {
+            if (pass.validity.patternMismatch) {
+                pass.setCustomValidity('Al menos 8 caracteres, minúsculas, mayúsculas, dígito y carácter no alfanumérico.');
+            } else {
+                pass.setCustomValidity('');
+            }
+        })
+
+        country.addEventListener('input', (e) => {
+            if (e.srcElement.value === 'España') {
+                if (!/^34/.test(tlf.value)) {
+                    tlf.setCustomValidity('Falta el prefijo del numero de TLF');
+                } else {
+                    tlf.setCustomValidity('');
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
